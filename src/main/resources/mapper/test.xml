@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.site.mapper.TestMapper">
+
+	<!-- 이 xml이 DB와 연결되는 부분이다. -->
+	<select id="selectString" resultType="String">
+	
+		select * from test
+	
+	</select>
+	
+	
+	
+	
+
+
+</mapper>

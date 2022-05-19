@@ -1,0 +1,86 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Do Hyeon', sans-serif;
+}
+#outline1{
+	width: 100%;
+	background-color: #202020;
+	border: 1px solid #202020;
+}
+#developerNm{
+	width: 240px;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	margin-top: 40px;
+	border: 1px solid white;
+}
+#introducing{
+	width: 700px;
+	color: white;
+	text-align: center;
+	margin: 15px auto;
+	border: 1px solid red;
+}
+#contactList{
+	width: 188px;
+	height: 50px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	/* border: 1px solid white; */
+}
+.contactUlStyle{
+	list-style: none;
+}
+.contactUlStyle li{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	/* border: 1px solid green; */
+}
+#footerMenu{
+	width: 380px;
+	height: 34px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 25px;
+	/* border: 1px solid white; */
+}
+#footerMenu li{
+	width: 70px;
+	height: 21px;
+	text-align: center;
+	color: white;
+	float: left;
+	border-radius: 15px;
+	border: 1px solid gray;
+}
+#outline2{
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	padding-top: 8px;
+	background-color: #000000;
+	border: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

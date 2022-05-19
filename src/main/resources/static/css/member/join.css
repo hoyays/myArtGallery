@@ -1,0 +1,132 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Do Hyeon', sans-serif;
+}
+#joinTitle{
+	width: 50%;
+	height: 100px;
+	box-sizing: border-box;
+	font-size: 35px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 50px;
+	/* border: 1px solid red; */
+}
+#contentsArea{
+	width: 35%;
+	/* height: 500px; */
+	box-sizing: border-box;
+	box-shadow: 1px 1px 5px 1px gray;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border: 1px solid #ddd;
+}
+#joinHeader{
+	height: 60px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 22px 0;
+	border-bottom: 3px solid #DAE5D0;
+	/* border: 1px solid black; */
+}
+#tableHeader{
+	width: 50px;
+	float: left;
+	padding-left: 35px;
+	/* border: 1px solid black; */
+}
+#required{
+	float: right;
+	padding-right: 35px;
+	/* border: 1px solid black; */
+}
+#joinTable{
+	width: 86%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	/* border: 1px solid blue; */
+}
+#joinTable input{
+	width: 200px;
+	height: 30px;
+}
+#joinTable input[type="button"]{
+	width: 60px;
+	height: 30px;
+}
+#joinTable input[id="email2"]{
+	width: 100px;
+	height: 30px;
+}
+#joinTable select{
+	height: 32px;
+}
+
+#reCAPTCHA{
+	width: 86%;
+	height: 50px;
+	text-align: center;
+	color: red;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+#joinBtn{
+	width: 120px;
+	height: 40px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 20px;
+	/* border: 1px solid red; */
+}
+#joinBtn input{
+	width: 120px;
+	height: 40px;
+	color: #666;
+	font-size: 14px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	border: none;
+	border-radius: 30px;
+}
+#joinBtn input:hover{
+	outline: none;
+	box-shadow: 0 0 0 2px #ddd;
+}
+#joinFooter{
+	height: 60px;
+	margin-top: 50px;
+	border-top: 3px solid #DAE5D0;
+	/* border: 1px solid green; */
+}
+#ulStyle{
+	width: 340px;
+	height: 30px;
+	box-sizing: border-box;
+	list-style: none;
+	margin: 17px auto;
+	padding-left: 30px;
+	/* border: 1px solid red; */
+}
+#ulStyle li{
+	float: left;
+	margin-right: 20px;
+	/* border: 1px solid black; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

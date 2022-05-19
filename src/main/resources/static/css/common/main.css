@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Do Hyeon', sans-serif;
+}
+#contentsArea{
+	width: 80%;
+	height: 500px;
+	text-align: center;
+	font-size: 50px;
+	margin: 0 auto;
+	padding-top: 50px;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.site.mapper.LoginMapper">
+
+	<!-- 이 xml이 DB와 연결되는 부분이다. -->
+	<select id="selectLogin" resultType="com.site.dto.MemberDto">
+		SELECT userId,
+		       userNm
+		FROM   MAG_member
+		WHERE  userId = #{userId}
+		       AND userPw = #{userPw}
+	
+	</select>
+	
+	
+	
+	
+
+
+</mapper>

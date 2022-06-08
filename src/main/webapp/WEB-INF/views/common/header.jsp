@@ -1,12 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 		<link href="../css/common/header.css" rel="stylesheet">
 			<div id="topMenu">
 				<div id="homeBtn"><a href="/">HOME</a></div>
 				<div id="memberBtn">
 					<ul class="memberUlStyle">
-						<li><a href="/login">로그인</a></li>
-						<li><a href="/join">회원가입</a></li>
+						<c:choose>
+							<c:when test="${session_flag eq 'YES'}">
+								<li><a href="/logout">로그아웃</a></li>
+								<li><a href="/">${session_userNm}(${session_userId})님</a></li>
+							</c:when>
+							<c:otherwise>
+								<li><a href="/login">로그인</a></li>
+								<li><a href="/join">회원가입</a></li>
+							</c:otherwise>
+						
+						</c:choose>
+					
+					
+					
+						
+						
+						
+						
+						
+						
 					</ul>
 				</div>
 			</div>

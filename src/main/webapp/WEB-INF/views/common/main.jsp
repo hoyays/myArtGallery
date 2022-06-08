@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,7 +19,14 @@
 		
 		
 		<!-- Contents Area 시작 -->
-		<div id="contentsArea">Welcome!</div>
+		<div id="contentsArea">
+			Welcome!<br>
+			<c:choose>
+				<c:when test="${session_flag eq 'YES'}">
+					${session_userId}
+				</c:when>
+			</c:choose>
+		</div>
 		
 		
 		<!-- footer 추가 -->

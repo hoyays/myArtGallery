@@ -30,7 +30,7 @@ a:hover{
 	/* border: 1px solid blue; */
 }
 #memberBtn{
-	width: 140px;
+	width: 400px;
 	float: right;
 	/* border: 1px solid red; */
 }
@@ -38,8 +38,8 @@ a:hover{
 	list-style: none;
 }
 .memberUlStyle li{
-	width: 50px;
-	float: left;
+	width: 130px;
+	float: right;
 	margin-right: 10px;
 	/* border: 1px solid black; */
 }

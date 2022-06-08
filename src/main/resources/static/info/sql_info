@@ -1,0 +1,15 @@
+=====> MAG_member(회원가입) 테이블 <=====
+
+create table MAG_member(
+userId varchar2(20) primary key,
+userPw varchar2(20),
+userNm varchar2(10),
+userMobile varchar2(20),
+userEmail varchar2(30)
+);
+
+
+**** Dummy Data ****
+insert into MAG_member values(
+'admin', '1111', '관리자', '010-0000-0000', 'admin@naver.com'
+);

@@ -1,5 +1,6 @@
 =====> MAG_member(회원가입) 테이블 <=====
 
+1. 최초 테이블 생성
 create table MAG_member(
 userId varchar2(20) primary key,
 userPw varchar2(20),
@@ -13,3 +14,7 @@ userEmail varchar2(30)
 insert into MAG_member values(
 'admin', '1111', '관리자', '010-0000-0000', 'admin@naver.com'
 );
+
+2. 컬럼 2개 추가(로그인 상태 유지)
+alter table mag_member add sessionId varchar2(50) default 'none' not NULL;
+alter table mag_member add sessionlimit timestamp;

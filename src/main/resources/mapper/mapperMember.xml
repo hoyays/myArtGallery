@@ -6,6 +6,7 @@
 <mapper namespace="com.site.mapper.LoginMapper">
 
 	<!-- 이 xml이 DB와 연결되는 부분이다. -->
+	<!-- 로그인 처리 -->
 	<select id="selectLogin" resultType="com.site.dto.MemberDto">
 		SELECT userId,
 		       userNm
@@ -16,6 +17,33 @@
 	</select>
 	
 	
+	<!-- 로그인 상태유지 체크시 세션 정보 저장 -->
+	<update id="updateSessionInfo">
+		UPDATE MAG_member 
+		SET sessionId = #{sessionId}, 
+			sessionLimit = #{sessionLimit} 
+		WHERE userId = #{userId} 
+	</update>
+	
+	
+	
+	<!-- 세션 유효기간이 남아있는 사용자 정보 가져오기 -->
+	<select id="selectUsersWithinSessionLimit" resultType="com.site.dto.MemberDto">
+		SELECT userId,
+		       userNm
+		FROM   MAG_member
+		WHERE  sessionId = #{sessionId}
+		       AND sessionLimit > systimestamp	
+	</select>
+	
+	
+	
+	<!-- 회원가입 - 아이디 중복체크 -->
+	<select id="selectIdDoubleChk" resultType="int">
+		SELECT Count(*) 
+		FROM MAG_member 
+		WHERE userId = #{userId}
+	</select>
 	
 	
 

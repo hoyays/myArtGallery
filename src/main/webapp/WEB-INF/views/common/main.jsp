@@ -23,7 +23,7 @@
 			Welcome!<br>
 			<c:choose>
 				<c:when test="${session_flag eq 'YES'}">
-					${session_userId}
+					<%=session_userId%>
 				</c:when>
 			</c:choose>
 		</div>

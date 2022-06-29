@@ -1,5 +1,7 @@
 package com.site.dto;
 
+import java.sql.Timestamp;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +16,8 @@ public class MemberDto {
 	private String userNm;
 	private String userMobile;
 	private String userEmail;
+	private String sessionId;
+	private Timestamp sessionLimit;
 	
 	
 }//class

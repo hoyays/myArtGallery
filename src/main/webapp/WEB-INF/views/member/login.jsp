@@ -40,6 +40,10 @@
 					return false;
 				}
 				
+				//로그인 상태유지 Checkbox 체크 여부 확인
+				var is_checked = $("#stayLogin").is(":checked");
+				$("#stayLoginValue").val(is_checked); 
+				//alert($("#stayLoginValue").val());
 				document.loginForm.submit();
 			}//doLogin()
 			
@@ -75,17 +79,18 @@
 		<div id="loginTitle">로그인</div>
 		<div id="contentsArea">
 			
-			<div id="loginHeader">
-			
-				<div id="tableHeader">로그인</div>
-				<div id="rememberArea">
-					<input type="checkbox" id="rememberMe">
-					<label for="rememberMe">로그인 상태 유지</label>
+			<form action="doLogin" name="loginForm" method="post">
+				<div id="loginHeader">
+				
+					<div id="tableHeader">로그인</div>
+					<div id="rememberArea">
+						<input type="checkbox" id="stayLogin" name="stayLogin">
+						<input type="hidden" id="stayLoginValue" name="stayLoginValue" value="">
+						<label for="stayLogin">로그인 상태 유지</label>
+					</div>
+				
 				</div>
 			
-			</div>
-			
-			<form action="doLogin" name="loginForm" method="post">
 				<div id="loginTable">
 					<dl>
 							<dt><label for="userId">아이디</label></dt>
